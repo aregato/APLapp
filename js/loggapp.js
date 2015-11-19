@@ -28,7 +28,7 @@ module.config(function ($urlRouterProvider,$stateProvider){
        templateUrl:"templates/minasidor.html"
     }).state("startsida",{
         url:"/startsida",
-        templateUrl:"templates/startsida.html"
+        templateUrl:"templates/startsidaElev.html"
     });
     
 });

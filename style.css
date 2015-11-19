@@ -20,3 +20,12 @@ and open the template in the editor.
 #well2{
     background-color: #bce8f1;
 }
+
+#h4 {
+   color: black;
+}
+
+#alert {
+    border-style: solid;
+    border-color: black;
+}

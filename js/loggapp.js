@@ -21,11 +21,10 @@ module.config(function ($urlRouterProvider,$stateProvider){
     }).state("minasidor",{
        url:"/minasidor",
        templateUrl:"templates/minasidor.html"
-<<<<<<< HEAD
     }).state("startsida",{
         url:"/startsida",
         templateUrl:"templates/startsidaElev.html"
-=======
+
     }).state("tidslinje",{
         url:"/tidslinje",
         templateUrl:"templates/tidslinje.html"
@@ -59,7 +58,7 @@ module.config(function ($urlRouterProvider,$stateProvider){
     }).state("lasaloggbok",{
         url:"/lasaloggbok",
         templateUrl:"templates/lasaloggbok.html"
->>>>>>> origin/master
+
     });
     
 });

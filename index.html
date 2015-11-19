@@ -1,29 +1,57 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html ng-app="LoggApp">
+<html ng-app="LoggApp" lang="eng">
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>AplApp</title>
+        <!-- Bootstrap -->
+        <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+        <link href="design/css.css" rel="stylesheet">
         <title>LoggApp</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-    <body id="background">
-        <div>
-        <header ng-include="'templates/header.html'"></header>
-        <div ui-view></div>
-     
-        <!--JavaScript libs -->
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <body background="Abstract-backgrounds-pattern-01.jpg">
+        <header>
+            <div class="container">
+                <h1>Snabbval till momenten:</h1>
+                <h2><small><a href="">Bygg</a></small><small><a href="">Barn o 
+                            fritid</a></small><small><a href="">El o Energi</a></small></h2>
+            </div>
+        </header>
+        <div style="padding-top: 5%;" class="col-md-offset-4 col-md-4 col-xs-offset-3 col-xs-6">
+            <div style="background-color: #4ce875" class="well">
+                <br>
+                <p id="loginscreen"><input type='text' name='Username' value='Användarnamn'></p>
+                <p id="loginscreen"><input type='password' name='lösenord' value='Lösenord'></p>
+                <a id="glöm" href="">Glömt lösenord?</a><button id='loginbutton' 
+                                                                type="button" class="btn btn-default btn-primary"><a id="login" href="">Login</a></button>
+                <br> 
+            </div>
+        </div>
+        <footer>
+            <div id="footer">
+                <p class="alignleft">Support: 0123-456789</p>
+                <p class="alignright">support&#64;utb.vaxjo.se</p>
+            </div>
+        <div style="clear: both;"></div>
+    </footer>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="bower_components/angular/angular.min.js"></script>
         <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
         <!-- Own javascript files -->
         <script src="js/loggapp.js"></script>
-        </div>
-    </body>
+</body>
 </html>

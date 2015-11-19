@@ -37,7 +37,7 @@ module.config(function ($urlRouterProvider,$stateProvider){
         templateUrl:"templates/narvaro.html"
     }).state("loggbok1",{
         url:"/loggbok1",
-        templateUrl:"templates/loggbok1.html"
+        templateUrl:"templates/addLogg.html"
     }).state("loggbok2",{
         url:"/loggbok2",
         templateUrl:"templates/loggbok2.html"

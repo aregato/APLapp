@@ -1,0 +1,9 @@
+<div class="container" ng-controller="aktivitetsCtrl">
+    <div class="jumbotron">
+        <h1>Aktivitet ({{aktiviteter.length}})</h1>
+    </div>
+    <div class="row well" ng-repeat="aktivitet in aktiviteter">
+        <div class="col-lg-3 ">{{aktivitet.rubrik}}</div>
+        <div class="col-lg-9 ">{{aktivitet.beskrivning}}</div>
+    </div>
+</div>

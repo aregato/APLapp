@@ -3,7 +3,7 @@ var module = angular.module("LoggApp", ["ui.router"]);
 module.config(function ($urlRouterProvider, $stateProvider) {
 
     $urlRouterProvider.otherwise("/");
-
+    
     $stateProvider.state("home", {
         url: "/",
         templateUrl: "templates/" + startsida

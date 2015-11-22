@@ -24,25 +24,30 @@ module.config(function ($urlRouterProvider,$stateProvider){
     }).state("startsida",{
         url:"/startsida",
         templateUrl:"templates/startsidaElev.html"
-
     }).state("tidslinje",{
         url:"/tidslinje",
         templateUrl:"templates/tidslinje.html"
     }).state("aktivitet",{
         url:"/aktivitet",
         templateUrl:"templates/aktivitet.html"
-    }).state("narvaro",{
-        url:"/narvaro",
-        templateUrl:"templates/narvaro.html"
+    }).state("narvaroLarare",{
+        url:"/narvaroLarare",
+        templateUrl:"templates/narvaroLarare.html"
+    }).state("narvaroElev",{
+        url:"/narvaroElev",
+        templateUrl:"templates/narvaroElev.html"
     }).state("loggbok1",{
         url:"/loggbok1",
         templateUrl:"templates/addLogg.html"
     }).state("loggbok2",{
         url:"/loggbok2",
         templateUrl:"templates/loggbok2.html"
-    }).state("moment",{
-        url:"/moment",
-        templateUrl:"templates/moment.html"
+    }).state("momentLarare",{
+        url:"/momentLarare",
+        templateUrl:"templates/momentLarare.html"
+    }).state("momentElev",{
+        url:"/momentElev",
+        templateUrl:"templates/momentElev.html"
     }).state("loggbocker",{
         url:"/loggbocker",
         templateUrl:"templates/loggbocker.html"
@@ -70,7 +75,7 @@ module.controller("aktivitetsCtrl", function ($scope) {
                     + "och behöver godkännas"
         }, {
             "rubrik": "Ny logg",
-            "beskrivning": "En ny logg har laggs till i %Elev%'s loggbok "
+            "beskrivning": "En ny logg har laggs till i %Elev%s loggbok "
                     + "och behöver godkännas"
         }, {
             "rubrik": "Händelse",

@@ -80,13 +80,14 @@ module.controller("aktivitetsCtrl", function ($scope) {
 
 module.controller("urlCtrl", function ($scope){
     $scope.changeUrl = function (){
-        var indata = $scope.loginname;
+        var indata = $scope.loginname.toLowerCase();
+        console.log(indata);
         if(indata === "elev"){
-            $scope.urlValue = "http://www.smp.se";
+            $scope.urlValue = "elev.html";
         }else if(indata === "lärare"){
-            $scope.urlValue = "http://www.google.se";
+            $scope.urlValue = "larare.html";
         }else if(indata === "handledare"){
-            $scope.urlValue = "http://www.youtube.se";
+            $scope.urlValue = "handledare.html";
         }
         $scope.loginname = "";
     };

@@ -12,15 +12,19 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div style="padding-top: 15%;" class="col-md-offset-4 col-md-4 col-xs-offset-3 col-xs-6">
-            <div style="background-color: #4ce875" class="well">
+        <div style="margin: auto; margin-top: 50px; min-width: 300px; max-width: 300px;">
+            <div style="background-color: #4ce875" class="well text-center" ng-controller="urlCtrl">
+                <p>Ange "elev", "lärare" eller "handledare" som användarnamn för
+                    att se hur sidan ser ut för de olika aktörerna!
+                </p>
                 <br>
-                <p id="loginscreen"><input type='text' name='Username' value='Användarnamn'></p>
-                <p id="loginscreen"><input type='password' name='lösenord' value='Lösenord'></p>
-                <a id="glöm" href="#">Glömt lösenord?</a><button id='loginbutton' 
-type="button" class="btn btn-default btn-primary">
-                <a id="login" href="#">Login</a></button>
-                <br> 
+                <input ng-model="loginname" type='text' placeholder='Användarnamn'>
+                <br/><br/>
+                <input type='password' placeholder='Lösenord'>
+                <br/><br/>
+                <a id="glöm" href="#">Glömt lösenord?</a>
+                <a ng-click="changeUrl()" class="btn btn-primary" ng-href="{{urlValue}}">Login</a>
+                <br/> 
             </div>
         </div>
         <footer>
@@ -28,15 +32,14 @@ type="button" class="btn btn-default btn-primary">
                 <p class="alignleft">Support: 0123-456789</p>
                 <p class="alignright">support&#64;utb.vaxjo.se</p>
             </div>
-        <div style="clear: both;"></div>
-    </footer>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <!-- Own javascript files -->
-    <script src="js/loggapp.js"></script>
-</body>
+            <div style="clear: both;"></div>
+        </footer>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <!-- Own javascript files -->
+        <script src="js/loggapp.js"></script>
+    </body>
 </html>

@@ -77,3 +77,17 @@ module.controller("aktivitetsCtrl", function ($scope) {
             "beskrivning": "Beskrivning"
         }];
 });
+
+module.controller("urlCtrl", function ($scope){
+    $scope.changeUrl = function (){
+        var indata = $scope.loginname;
+        if(indata === "elev"){
+            $scope.urlValue = "http://www.smp.se";
+        }else if(indata === "lärare"){
+            $scope.urlValue = "http://www.google.se";
+        }else if(indata === "handledare"){
+            $scope.urlValue = "http://www.youtube.se";
+        }
+        $scope.loginname = "";
+    };
+});

@@ -60,3 +60,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+#nbproject
+/nbproject
+/introduktion_java/build/
+/introduktion_java/nbproject/private/

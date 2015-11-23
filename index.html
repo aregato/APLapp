@@ -18,15 +18,13 @@
                     att se hur sidan ser ut för de olika aktörerna!
                 </p>
                 <br/>
-                  <p id="loginscreen"><input type='text' name='Username' value='Användarnamn'></p>
-                <p id="loginscreen"><input type='password' name='lösenord' value='Lösenord'></p>
-                <a id="glöm" href="#">Glömt lösenord?</a><button id='loginbutton' 
-type="button" class="btn btn-default btn-primary">
-                <a id="login" href="#">Login</a></button>
-                <br>
-                <a href="elev.html"><button class="btn btn-danger">Elev</button></a>
-                <a href="handledare.html"><button class="btn btn-danger">Handledare</button></a>
-                <a href="larare.html"><button class="btn btn-danger">Lärare</button></a>    
+                  <input ng-model="loginname" type='text' placeholder='Användarnamn'>
+                <br/><br/>
+                <input type='password' placeholder='Lösenord'>
+                <br/><br/>
+                <a id="glöm" href="#">Glömt lösenord?</a>
+                <a ng-click="changeUrl()" class="btn btn-primary" ng-href="{{urlValue}}">Login</a>
+                <br/> 
             </div>
         </div>
         <footer>

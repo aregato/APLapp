@@ -85,16 +85,20 @@ module.config(function ($urlRouterProvider, $stateProvider) {
 module.controller("aktivitetsCtrl", function ($scope) {
     $scope.aktiviteter = [{
             "rubrik": "Ny närvaro",
-            "beskrivning": "En ny närvaro har blivit rapporterad av %Elev% "
+            "beskrivning": "En ny närvaro har blivit rapporterad av Carl "
                     + "och behöver godkännas"
         }, {
             "rubrik": "Ny logg",
-            "beskrivning": "En ny logg har laggs till i %Elev%s loggbok "
+            "beskrivning": "En ny logg har laggs till i Carls loggbok "
                     + "och behöver godkännas"
         }, {
             "rubrik": "Händelse",
             "beskrivning": "Beskrivning"
         }];
+    $scope.show = function(){
+        $("#narvarodiv").toggleClass("hidden");
+        $("#narvarodiv").toggleClass("well");
+    };
 });
 
 module.controller("urlCtrl", function ($scope) {

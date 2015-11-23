@@ -1,9 +1,23 @@
-<div class="container" ng-controller="aktivitetsCtrl">
+<div class="container well" ng-controller="aktivitetsCtrl">
     <div class="jumbotron">
         <h1>Aktivitet ({{aktiviteter.length}})</h1>
     </div>
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 hidden" id="narvarodiv">
+            <h3>Godkänn Närvaro</h3>
+            <p>
+                Carl rapporterade 8:00 till 16:00.
+            </p>
+            <a href="#" class="btn btn-warning">Godkänn</a>
+        </div>
+    </div>
     <div class="row well" ng-repeat="aktivitet in aktiviteter">
-        <div class="col-lg-3 ">{{aktivitet.rubrik}}</div>
+        <div class="col-lg-2 ">{{aktivitet.rubrik}}</div>
         <div class="col-lg-9 ">{{aktivitet.beskrivning}}</div>
+        <div class="col-lg-1 ">
+            <a onclick='show()' ng-click="show()">
+                SHOW
+            </a>
+        </div>
     </div>
 </div>

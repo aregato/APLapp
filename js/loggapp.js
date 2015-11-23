@@ -72,7 +72,12 @@ module.config(function ($urlRouterProvider, $stateProvider) {
     }).state("lasaloggbok", {
         url: "/lasaloggbok",
         templateUrl: "templates/lasaloggbok.html"
-
+    }).state("loggbokHandledare",{
+       url:"/loggbokHandledare",
+       templateUrl:"templates/loggbokHandledare.html"
+    }).state("loggbokLärare",{
+       url:"/loggbokLärare",
+       templateUrl:"templates/loggbokLärare.html"
     });
 
 });

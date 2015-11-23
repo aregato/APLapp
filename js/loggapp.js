@@ -39,6 +39,9 @@ module.config(function ($urlRouterProvider, $stateProvider) {
     }).state("aktivitet", {
         url: "/aktivitet",
         templateUrl: "templates/aktivitet.html"
+    }).state("narvaroHandledare", {
+        url: "/narvaroHandledare",
+        templateUrl: "templates/narvaroHandledare.html"
     }).state("narvaroLarare", {
         url: "/narvaroLarare",
         templateUrl: "templates/narvaroLarare.html"

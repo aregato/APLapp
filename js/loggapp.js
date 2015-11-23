@@ -57,6 +57,9 @@ module.config(function ($urlRouterProvider, $stateProvider) {
     }).state("momentLarare", {
         url: "/momentLarare",
         templateUrl: "templates/momentLarare.html"
+    }).state("momentHandledare", {
+        url: "/momentHandledare",
+        templateUrl: "templates/momentHandledare.html"
     }).state("momentElev", {
         url: "/momentElev",
         templateUrl: "templates/momentElev.html"

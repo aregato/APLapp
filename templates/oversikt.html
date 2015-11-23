@@ -1,0 +1,35 @@
+<div class="container well">
+    <div class="jumbotron">
+        <h1>Översikt</h1>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+</div>
+<script>
+    var canvas = angular.element(document.getElementById("canvas"));
+    var ctx = canvas[0].getContext("2d");
+    var data = [
+        {
+            value: 3,
+            color: "#F7464A",
+            highlight: "#FF5A5E",
+            label: "Dåligt"
+        },
+        {
+            value: 5,
+            color: "#46BFBD",
+            highlight: "#5AD3D1",
+            label: "Bra"
+        },
+        {
+            value: 1,
+            color: "#FDB45C",
+            highlight: "#FFC870",
+            label: "Sådär"
+        }
+    ];
+    var diagram = new Chart(ctx).Pie(data, null);
+</script>

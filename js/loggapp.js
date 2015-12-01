@@ -84,6 +84,9 @@ module.config(function ($urlRouterProvider, $stateProvider) {
     }).state("loggbokLärare",{
        url:"/loggbokLärare",
        templateUrl:"templates/loggbokLärare.html"
+    }).state("addChangeUser",{
+       url:"/användare",
+       templateUrl:"templates/addChangeUser.html"
     });
 
 });
